@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('/passwd', include('django.contrib.auth.urls'))
+    path('admin/', admin.site.urls),
+    path('passwd/', include('django.contrib.auth.urls')),
 ]
